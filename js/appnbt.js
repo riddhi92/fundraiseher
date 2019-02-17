@@ -50,7 +50,7 @@ function renderCafe(doc) {
     
     
 }
-db.collection('projects').where('projectid','==','blend').get().then(snapshot => {
+db.collection('projects').where('projectid','==','nontoxicbodycare').get().then(snapshot => {
 	
  snapshot.docs.forEach(doc => {
      const currentCount = doc.data().views
@@ -65,7 +65,7 @@ db.collection('projects').where('projectid','==','blend').get().then(snapshot =>
 
 function incrementClap() {
     
-    db.collection('projects').where('projectid','==','blend').get().then(snapshot => {
+    db.collection('projects').where('projectid','==','nontoxicbodycare').get().then(snapshot => {
 	
  snapshot.docs.forEach(doc => {
      const currentCount = doc.data().claps
