@@ -8,7 +8,7 @@ const viewsText = document.querySelector('#views');
 const clapsText = document.querySelector('#claps');
 const emailText = document.querySelector('#email');
 const locationText = document.querySelector('#location');
-const companyurlText = document.querySelector('companyurl');
+const companyurlText = document.querySelector('#companyurl');
 
 function renderCafe(doc) {
    
