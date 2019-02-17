@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+	<title>FundRaiseHer</title>
+	<meta charset="UTF-8">
+	<meta name="description" content=" Divisima | eCommerce Template">
+	<meta name="keywords" content="divisima, eCommerce, creative, html">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Favicon -->
+	<link href="img/favicon.ico" rel="shortcut icon"/>
+
+	<!-- Google Font -->
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,300i,400,400i,700,700i" rel="stylesheet">
+
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="css/font-awesome.min.css"/>
+	<link rel="stylesheet" href="css/flaticon.css"/>
+	<link rel="stylesheet" href="css/slicknav.min.css"/>
+	<link rel="stylesheet" href="css/jquery-ui.min.css"/>
+	<link rel="stylesheet" href="css/owl.carousel.min.css"/>
+	<link rel="stylesheet" href="css/animate.css"/>
+	<link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/general.css"/>
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/chatbot.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-firestore.js"></script>
+    <script src="js/firebase.js"></script>
+    
+</head>
+<body>
+	<!-- Page Preloder -->
+	<div id="preloder">
+		<div class="loader"></div>
+	</div>
+
+    <!-- Header section -->
+	<header class="header-section">
+		<div class="header-top">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-2 text-center text-lg-left">
+						<!-- logo -->
+						<a href="./index.html" class="site-logo">
+							<img src="img/logo.png" alt="">
+						</a>
+					</div>
+					<div class="col-xl-6 col-lg-5">
+					
+					</div>
+					<div >
+						<div class="user-panel"style="padding-top:20px;">
+                            <div class="up-item"  style="margin-right: 10px;">
+								<i class="flaticon-home"></i>
+								<a href="index.html">Home</a>
+							</div>
+                            <div class="up-item" style="margin-right: 10px;">
+								<i class="flaticon-store"></i>
+								<a href="about.html">About Us</a>
+							</div>
+							<div class="up-item" style="margin-right: 10px;">
+								<i class="flaticon-briefcase"></i>								
+                                <div class="dropdown">
+                                    <a href="#">Discover</a>
+                                  <div class="dropdown-content">
+                                    <a href="#">All Projects</a>
+                                    <a href="#">Health + Science</a>
+                                    <a href="#">Social Good</a>
+                                    <a href="#">Tech</a>
+                                    <a href="#">Raleigh</a>
+                                    <a href="#">Charlotte</a>
+                                  </div>
+                                </div>
+							</div>
+							<div class="up-item">
+								<div class="shopping-card">
+									<i class="flaticon-stats"></i>
+								</div>
+								<a href="#">Statistics</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</header>
+	<!-- Header section end -->
+
+
+	<!-- Page info -->
+	<div class="page-top-info">
+		<div class="container">
+			<h4 id="projectTitleHeading"></h4>
+            <p style="font-size: 18px" id="location"></p>
+			
+		</div>
+	</div>
+	<!-- Page info end -->
+
+
+	<!-- product section -->
+	<section class="product-section">
+		<div class="container">
+			
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="product-pic-zoom">
+						<img class="product-big-img" src="img/projects/genneve.jpg" style="height: 450px;"alt="">
+                        <h5 style="padding-top: 30px;">Please visit our company website</h5><h5 id="companyurl"></h5>
+					</div>
+				
+				</div>
+				<div class="col-lg-6 product-details">
+					<h2 class="p-title" id="projectTitle"></h2>
+					
+					<div class="p-review">
+						<label>Category</label><h4 id="category" ></h4>
+					</div>
+					<div class="p-review">
+						<label>Fund Raised</label>
+							<h4 id="fundRaised"></h4>
+						
+					</div>
+					<div class="p-review">
+						<label>Fund Target</label>
+							<h4 id="fundTarget"></h4>
+                    </div>
+                    <div class="p-review">
+						<label>Views</label>
+							<h4 id="views"></h4>
+					</div>
+                    <div class="p-review">
+						<label>Claps</label>
+							<h4 id="claps"></h4><img src="img/clap.png" onClick="incrementClap()" style="width:30px; height:30px; cursor: pointer;">
+					</div>
+					<a href="#" class="site-btn">Donate Now</a>
+					<div id="accordion" class="accordion-area">
+						<div class="panel">
+							<div class="panel-header" id="headingOne">
+								<button class="panel-link active" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">information</button>
+							</div>
+							<div id="collapse1" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+								<div class="panel-body">
+									<p  id="description"></p>
+								</div>
+							</div>
+                            
+						</div>
+						<div class="panel">
+							<div class="panel-header" id="headingTwo">
+								<button class="panel-link" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">Feedback</button>
+							</div>
+							<div id="collapse2" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+								<div class="panel-body">
+									
+									<p style="font-size: 20px;">To provide your feedback to this organization please email them at <a href="#" id="email"></a></p>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+					<div class="social-sharing">
+						<a href=""><i class="fa fa-facebook"></i></a>
+						<a href=""><i class="fa fa-twitter"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- product section end -->
+    
+     <script src="js/appgn.js?">
+    
+    </script>
+    
+   
+
+	<!-- Footer section -->
+	<section class="footer-section">
+		
+		<div class="social-links-warp">
+			<div class="container">
+				<div class="social-links" style="text-align:center;">
+					<a href="" class="instagram"><i class="fa fa-instagram"></i><span>instagram</span></a>					
+					<a href="" class="facebook"><i class="fa fa-facebook"></i><span>facebook</span></a>
+					<a href="" class="twitter"><i class="fa fa-twitter"></i><span>twitter</span></a>
+				</div>
+
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --> 
+<p class="text-white text-center mt-2">Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This website is created by FundRaiseHer</p>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+
+			</div>
+		</div>
+	</section>
+	<!-- Footer section end -->
+
+
+
+	<!--====== Javascripts & Jquery ======-->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.slicknav.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.nicescroll.min.js"></script>
+	<script src="js/jquery.zoom.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/main.js"></script>
+
+	</body>
+</html>
