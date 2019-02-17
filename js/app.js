@@ -48,6 +48,16 @@ function renderCafe(doc) {
 db.collection('projects').where('projectid','==','littlesophia').get().then(snapshot => {
 	
  snapshot.docs.forEach(doc => {
+     const currentCount = snapshot.data().views
+
+    counterRef.set({
+      count: Number(currentCount) + 1
+    })
+     
      renderCafe(doc);
  })
+})
+
+db.collection('projects').where('projectid','==','littlesophia').update( {
+  views :  148
 })
