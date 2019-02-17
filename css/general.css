@@ -147,6 +147,10 @@ body, html {
   display: block;
 }
 
+.accordion-area .panel-body p span {
+    font-size: 20px;
+}
+
 .dropdown-content a:hover {background-color: #ddd;}
 
 .dropdown:hover .dropdown-content {display: block;}
