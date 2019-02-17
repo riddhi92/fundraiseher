@@ -1,9 +1,5 @@
 type = ['','info','success','warning','danger'];
 
-src="https://www.gstatic.com/firebasejs/5.8.0/firebase-app.js"
-src="https://www.gstatic.com/firebasejs/5.8.0/firebase-firestore.js"
-
-
 
 demo = {
     initPickColor: function(){
@@ -22,23 +18,6 @@ demo = {
 
     initChartist: function(){
 
-        const firebase = require("firebase");
-        // Required for side-effects
-        // require("firebase/firestore");
-
-        firebase.initializeApp({
-        apiKey: 'AIzaSyAwFLnhNc8GOWcnXpIDjq1OEpXfgsiINd4',
-        authDomain: 'fundraiseher.firebaseapp.com',
-        projectId: 'fundraiseher'
-      });
-
-        var db = firebase.firestore();
-
-        db.collection("projects").get().then((querySnapshot) => {
-        querySnapshot.forEach((doc) => {
-            console.log(`${doc.id} => ${doc.data()}`);
-        });
-    });
 
         var dataSales = {
           labels: ['9:00AM', '12:00AM', '3:00PM', '6:00PM', '9:00PM', '12:00PM', '3:00AM', '6:00AM'],
