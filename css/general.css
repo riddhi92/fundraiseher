@@ -1,0 +1,154 @@
+* {box-sizing: border-box;}
+
+/* Button used to open the chat form - fixed at the bottom of the page */
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+/* The popup chat - hidden by default */
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+  width: 30%;
+  padding: 10px;
+  background-color: #EBEBEB;
+  height:70%;	
+}
+
+/* Full-width textarea */
+.chat-popup textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #ffffff;
+  resize: none;
+  min-height: 200px;
+}
+
+/* When the textarea gets focus, do something */
+.chat-popup textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Add a red background color to the cancel button */
+.chat-popup .cancel {
+  background-color: #f51167;
+  height:30px;
+  text-align: center;
+  color: white;	
+  width: 50px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  margin-top: 7px;
+  margin-right: 10px;
+  position:absolute;
+  top:0;
+  right:0;
+  
+}
+
+.chatbox {
+  border-style: solid;
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #ffffff; 
+  height:300px;	
+  
+
+}
+    .userInput{float: left;}
+    .responseData{float:left};
+    #input { width: 50px; }
+    button { width: 50px; }
+#panel {
+            padding: 0 6px;
+	    top-margin:-5px;	
+            background-color: white;
+	    height: 250px;
+     overflow: auto;
+        }
+.chatDiv{
+            width:400px;
+            height:500px;
+            position:fixed;
+
+        }
+
+h1 {
+  margin: 0;
+    display: inline-block;
+}
+
+/* Add some hover effects to buttons */
+.chat-popup .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.bg {
+    /* The image used */
+    background-image: url("canvas_bg.png");
+    /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;	
+}
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: fixed;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 3;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
