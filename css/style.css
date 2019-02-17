@@ -334,7 +334,7 @@ ol {
 ---------------------*/
 
 .header-top {
-	padding: 18px 0 14px;
+	padding: 10px 0 10px;
 }
 
 .site-logo {
@@ -507,7 +507,7 @@ ol {
 
 .hero-slider .hs-item {
 	position: relative;
-	height: 720px;
+	height: 600px;
 }
 
 .hero-slider .hs-item span {
@@ -704,7 +704,7 @@ ol {
 .slide-num-holder {
 	float: right;
 	z-index: 1;
-	color: #fff;
+	color: #000;
 	position: relative;
 	font-size: 24px;
 	font-weight: 700;
@@ -721,7 +721,7 @@ ol {
 	content: "";
 	height: 30px;
 	width: 1px;
-	background: #fff;
+	background: #000;
 	left: 50%;
 	top: 0;
 	-webkit-transform-origin: center;
@@ -816,6 +816,7 @@ ol {
 .product-item .pi-pic {
 	position: relative;
 	display: block;
+    cursor: pointer;
 }
 
 .product-item .tag-new,
@@ -919,7 +920,7 @@ ol {
 
 .product-item .pi-text p {
 	font-size: 16px;
-	color: #111111;
+	color: #000000;
 	margin-bottom: 0;
 }
 
@@ -1202,7 +1203,7 @@ ol {
 
 .page-top-info {
 	background: #f8f7f7;
-	padding: 60px 0 70px;
+	padding: 30px 0 30px;
 }
 
 .page-top-info h4 {
@@ -2416,4 +2417,9 @@ ol {
 	.social-links a span {
 		display: none;
 	}
+    
+  
+
+
+
 }
